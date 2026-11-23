@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mimo Chat</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='chat.css') }}">
+</head>
+    <body>
+        <div class="chat">
+
+            <header class="chatheader">
+                <div class="logo">Mimo</div>
+                <div>
+                    <h1>Mimo's here!</h1>
+                    <span class="status">Let's chat with Mimo!</span>
+                </div>
+            </header>
+
+            <main class="listpesan" id="messagelist">
+                <div class="bubblebot">Hi! Aku Mimo, ada yang bisa aku bantu?</div>
+            </main>
+
+            <div class="inputarea">
+                <input type="text" id="input" placeholder="Ketik pesan..." autocomplete="off">
+                <button type="button" id="button" aria-label="Kirim">→</button>
+            </div>
+        </div>
+        <script src="{{ url_for('static', filename='chat.js') }}"></script>
+    </body>
+</html>

@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5e9f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.chat {
+    width: 100%;
+    max-width: 420px;
+    height: 600px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.chatheader {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 18px;
+    background: #401035;
+    color: #ffffff;
+}
+
+.logo {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    flex-shrink: 0;
+}
+
+.chatheader h1 {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.status {
+    font-size: 12px;
+    opacity: 0.85;
+}
+
+.listpesan {
+    flex: 1;
+    padding: 16px;
+    overflow-y: auto;
+    background: #fbf5fa;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.bubblebot {
+    max-width: 78%;
+    padding: 10px 14px;
+    border-radius: 16px;
+    font-size: 14.5px;
+    line-height: 1.4;
+    word-wrap: break-word;
+    align-self: flex-start;
+    background: #ffffff;
+    color: #222;
+    border-bottom-left-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+}
+
+.bubbleuser {
+    max-width: 78%;
+    padding: 10px 14px;
+    border-radius: 16px;
+    font-size: 14.5px;
+    line-height: 1.4;
+    word-wrap: break-word;
+    align-self: flex-end;
+    background: #6c135c;
+    color: #fff;
+    border-bottom-right-radius: 4px;
+}
+
+.inputarea {
+    display: flex;
+    gap: 8px;
+    padding: 12px;
+    border-top: 1px solid #eee3ed;
+    background: #ffffff;
+}
+
+.inputarea input {
+    flex: 1;
+    padding: 11px 16px;
+    border: 1px solid #e4d5e2;
+    border-radius: 24px;
+    font-size: 14.5px;
+    outline: none;
+}
+
+.inputarea button {
+    width: 44px;
+    height: 44px;
+    border: none;
+    border-radius: 50%;
+    background: #6c135c;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.inputarea button:hover {
+    background: #550d38;
+}
+
+.replyquote {
+    font-size: 0.8rem;
+    opacity: 0.75;
+    background: rgba(0, 0, 0, 0.07);
+    border-left: 3px solid #6c135c;
+    border-radius: 6px;
+    padding: 4px 8px;
+    margin-bottom: 6px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 220px;
+}
+
+.bubbletext {
+    white-space: pre-wrap; 
+}
